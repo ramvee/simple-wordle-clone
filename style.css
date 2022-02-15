@@ -1,0 +1,153 @@
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "Fira Code", "Consolas", monospace;
+  color: #ccc;
+  background-color: rgb(5, 15, 25);
+}
+
+* *::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+main {
+  height: 30rem;
+  background-color: rgb(6, 18, 29);
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+h1 {
+  user-select: none;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+}
+
+#tag {
+  margin: 0;
+  font-size: 1.8rem;
+  user-select: none;
+}
+
+hr {
+  width: 60%;
+  height: 1px;
+  background-color: #555;
+  border: none;
+}
+
+.word_style {
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 0.6rem;
+}
+
+.correct {
+  color: rgb(83, 141, 78);
+}
+.present {
+  color: rgb(181, 159, 59);
+}
+.absent {
+  color: #555;
+}
+.default {
+  color: #fff;
+}
+
+::placeholder {
+  color: #777;
+}
+
+#myText {
+  width: 18ch;
+  height: 2.5rem;
+  font-size: 2rem;
+  margin-top: 0.8rem;
+  background-color: rgb(5, 15, 25);
+  border: 2px solid #777;
+  text-align: center;
+}
+
+#myText:focus {
+  color: palegreen;
+  border-color: green;
+}
+
+/* removes default blue outline on focus */
+input:focus {
+  outline: none !important;
+  /*works only in chrome*/
+  /*outline-color: green;*/
+}
+
+#alpha_list {
+  margin-top: 0.8rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+#status {
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+/* Media Query for Smart Phones */
+@media only screen and (max-width: 375px) {
+  main {
+    height: auto;
+    padding-top: 0.2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #tag {
+    font-size: 1.2rem;
+  }
+
+  .word_style {
+    font-size: 1.8rem;
+    margin-top: 0.2rem;
+  }
+
+  #myText {
+    height: 1.8rem;
+    font-size: 1.3rem;
+  }
+
+  #alpha_list {
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+  }
+
+  #status {
+    font-size: 1.6rem;
+    padding-top: 0.4rem;
+  }
+}
