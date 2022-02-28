@@ -4331,7 +4331,7 @@ var solution_str = wordList[rand].toUpperCase();
 // testing
 // solution_str = 'SLEEP';
 var j = 0;
-flag = false;
+var flag = false;
 // bind myText entry box to call a function in JS
 var input = document.getElementById("myText");
 input.addEventListener("keyup", function (event) {
@@ -4367,7 +4367,7 @@ function myFunction() {
 
     var solution = solution_str.split("");
     var guess = guess_str.split("");
-    result = ["absent", "absent", "absent", "absent", "absent"];
+    var result = ["absent", "absent", "absent", "absent", "absent"];
 
     for (var i = 0; i < 26; i++) {
       // ascii code of 'A' is 65
